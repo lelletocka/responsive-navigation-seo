@@ -1,27 +1,38 @@
 @import 'header';
 
 body {
-    overflow: hidden;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
 }
 
+.text-nav {
+    display: none;
+    }
+
+.drop {
+    display: inline-block;
+ }
+
 main {
-    max-width: 90%;
+    width: 90%;
     margin: auto;
     padding: 1em;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 25px;
+    text-align: center;
 }
 
 
 
 /* @media queries */
 
-@media screen and (max-width: 700px) {
-    .text-nav {
-        display: none;
-    }
-    .drop {
-        display: inline-block;
+@media screen and (min-width: 540px) {
+    
+    h1 {
+        font-size: 30px;
     }
 }
 
@@ -31,5 +42,8 @@ main {
     }
     .drop {
         display: none;
+    }
+    h1 {
+        font-size: 40px;
     }
 }
