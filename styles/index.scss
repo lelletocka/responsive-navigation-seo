@@ -1,0 +1,35 @@
+@import 'header';
+
+body {
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+main {
+    max-width: 90%;
+    margin: auto;
+    padding: 1em;
+}
+
+
+
+/* @media queries */
+
+@media screen and (max-width: 700px) {
+    .text-nav {
+        display: none;
+    }
+    .drop {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 701px) {
+    .text-nav {
+        display: flex;
+    }
+    .drop {
+        display: none;
+    }
+}
